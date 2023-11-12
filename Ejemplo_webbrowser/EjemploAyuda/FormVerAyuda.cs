@@ -20,8 +20,8 @@ namespace EjemploAyuda
 
         private void FormVerAyuda_Load(object sender, EventArgs e)
         {
-            string path = Path.Combine(Application.StartupPath,"..",
-                "..","ayuda", "index.html");
+            // string path = Path.Combine(Application.StartupPath,"..","..","ayuda", "index.html");
+            string path = Path.Combine(Application.StartupPath,"ayuda", "index.html");
             webBrowser1.Navigate(path);
         }
     }

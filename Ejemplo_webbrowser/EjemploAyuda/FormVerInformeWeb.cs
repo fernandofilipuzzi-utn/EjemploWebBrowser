@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace EjemploAyuda
 {
-    public partial class FormVerRegistro : Form
+    public partial class FormVerInformeWeb : Form
     {
         #region codigo auxiliar
         Image foto;
@@ -36,7 +36,7 @@ namespace EjemploAyuda
         }
         #endregion
 
-        public FormVerRegistro()
+        public FormVerInformeWeb()
         {
             InitializeComponent();
         }

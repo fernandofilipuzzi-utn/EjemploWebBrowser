@@ -1,7 +1,7 @@
 ﻿
 namespace EjemploAyuda
 {
-    partial class FormVerRegistro
+    partial class FormVerInformeWeb
     {
         /// <summary>
         /// Required designer variable.

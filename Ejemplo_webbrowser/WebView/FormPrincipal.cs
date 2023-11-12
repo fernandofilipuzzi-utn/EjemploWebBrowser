@@ -30,7 +30,7 @@ namespace WebView
             string pathListado = gen.GenerarListadoHTML(pathRootWeb, listado);
 
             FormInformeWeb fInformeWeb = new FormInformeWeb();
-            fInformeWeb.webBrowser1.Navigate(pathListado);
+            fInformeWeb.webView21.Source=new Uri(pathListado);
             fInformeWeb.ShowDialog();
         }
 
