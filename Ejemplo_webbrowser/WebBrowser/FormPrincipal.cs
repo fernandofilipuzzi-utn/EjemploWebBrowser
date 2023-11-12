@@ -22,7 +22,7 @@ namespace WebBrowser
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnVerHTML_Click(object sender, EventArgs e)
         {
             string pathRootWeb = Application.StartupPath + @"\..\..\web";
 

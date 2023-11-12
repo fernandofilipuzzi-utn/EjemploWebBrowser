@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBrowser", "WebBrowser\We
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemploGeneracionHTMLClassLibrary", "EjemploGeneracionHTMLClassLibrary\EjemploGeneracionHTMLClassLibrary.csproj", "{594A4D92-F401-46B8-9A64-F0C3691427CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemploAyuda", "EjemploAyuda\EjemploAyuda.csproj", "{76956397-1925-4DC6-89FB-7DB66703B39C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{594A4D92-F401-46B8-9A64-F0C3691427CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{594A4D92-F401-46B8-9A64-F0C3691427CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{594A4D92-F401-46B8-9A64-F0C3691427CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76956397-1925-4DC6-89FB-7DB66703B39C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76956397-1925-4DC6-89FB-7DB66703B39C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76956397-1925-4DC6-89FB-7DB66703B39C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76956397-1925-4DC6-89FB-7DB66703B39C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
