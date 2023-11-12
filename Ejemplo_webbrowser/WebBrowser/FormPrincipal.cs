@@ -22,16 +22,10 @@ namespace WebBrowser
             InitializeComponent();
         }
 
-        private void btnVerHTML_Click(object sender, EventArgs e)
+        private void FormPrincipal_Load(object sender, EventArgs e)
         {
-            string pathRootWeb = Application.StartupPath + @"\..\..\web";
-
-            GenHTML gen = new GenHTML();
-            string pathListado = gen.GenerarListadoHTML(pathRootWeb, listado);
-
-            FormInformeWeb fInformeWeb = new FormInformeWeb();
-            fInformeWeb.webBrowser1.Navigate(pathListado);
-            fInformeWeb.ShowDialog();
+            GenListado genListado = new GenListado();
+            listado = genListado.ListarPersonas();
         }
 
         private void btnGenerarListado_Click(object sender, EventArgs e)
@@ -51,11 +45,16 @@ namespace WebBrowser
                 dgvPersonas.Rows.Add(renglon.ToArray());
             }
         }
-
-        private void FormPrincipal_Load(object sender, EventArgs e)
+        private void btnVerHTML_Click(object sender, EventArgs e)
         {
-            GenListado genListado = new GenListado();
-            listado = genListado.ListarPersonas();
+            string pathRootWeb = Application.StartupPath + @"\..\..\web";
+
+            GenHTML gen = new GenHTML();
+            string pathListado = gen.GenerarListadoHTML(pathRootWeb, listado);
+
+            FormInformeWeb fInformeWeb = new FormInformeWeb();
+            fInformeWeb.webBrowser1.Navigate(pathListado);
+            fInformeWeb.ShowDialog();
         }
     }
 }
