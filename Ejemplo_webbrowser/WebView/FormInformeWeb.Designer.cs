@@ -50,6 +50,7 @@
             this.ClientSize = new System.Drawing.Size(882, 580);
             this.Controls.Add(this.webView21);
             this.Name = "FormInformeWeb";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FormInformeWeb";
             ((System.ComponentModel.ISupportInitialize)(this.webView21)).EndInit();
             this.ResumeLayout(false);

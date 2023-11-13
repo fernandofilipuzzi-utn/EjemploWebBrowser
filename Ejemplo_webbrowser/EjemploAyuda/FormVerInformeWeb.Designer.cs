@@ -30,7 +30,7 @@ namespace EjemploAyuda
         private void InitializeComponent()
         {
             this.pbFoto = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbApellidoNombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCerrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).BeginInit();
@@ -46,13 +46,13 @@ namespace EjemploAyuda
             this.pbFoto.TabIndex = 0;
             this.pbFoto.TabStop = false;
             // 
-            // textBox1
+            // tbApellidoNombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(48, 59);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(263, 22);
-            this.textBox1.TabIndex = 1;
+            this.tbApellidoNombre.Location = new System.Drawing.Point(48, 59);
+            this.tbApellidoNombre.Margin = new System.Windows.Forms.Padding(4);
+            this.tbApellidoNombre.Name = "tbApellidoNombre";
+            this.tbApellidoNombre.Size = new System.Drawing.Size(263, 22);
+            this.tbApellidoNombre.TabIndex = 1;
             // 
             // label1
             // 
@@ -77,18 +77,20 @@ namespace EjemploAyuda
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // FormVerRegistro
+            // FormVerInformeWeb
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(539, 286);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbApellidoNombre);
             this.Controls.Add(this.pbFoto);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "FormVerRegistro";
+            this.Name = "FormVerInformeWeb";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FormVerRegistro";
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).EndInit();
             this.ResumeLayout(false);
@@ -99,7 +101,7 @@ namespace EjemploAyuda
         #endregion
 
         public System.Windows.Forms.PictureBox pbFoto;
-        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox tbApellidoNombre;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCerrar;
     }

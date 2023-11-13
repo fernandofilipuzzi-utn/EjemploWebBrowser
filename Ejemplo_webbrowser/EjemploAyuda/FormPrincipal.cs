@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -71,8 +72,8 @@ namespace EjemploAyuda
 
                     FormVerInformeWeb fVerRegistro = new FormVerInformeWeb();
 
-                    fVerRegistro.textBox1.Text = selected.Nombre;
-                    fVerRegistro.textBox1.Enabled = false;
+                    fVerRegistro.tbApellidoNombre.Text = selected.Nombre;
+                    fVerRegistro.tbApellidoNombre.Enabled = false;
 
                     fVerRegistro.Foto=selected.Imagen;
 
@@ -83,7 +84,85 @@ namespace EjemploAyuda
 
         private void btnImportarCSV_Click(object sender, EventArgs e)
         {
-            //implementar
+            openFileDialog1.Title = "Importando los registros de personas";
+            openFileDialog1.Filter = "CSV|*.csv";
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                string path = openFileDialog1.FileName;
+
+                FileStream fs = null;
+                StreamReader sr = null;
+                try
+                {
+                    fs = new FileStream(path, FileMode.Open, FileAccess.Read);
+                    sr = new StreamReader(fs);
+
+                    string pathDir = Path.GetDirectoryName(path);
+
+                    listado.Sort();
+
+                    //descarto la primera línea.
+                    sr.ReadLine();
+
+                    while (sr.EndOfStream == false)
+                    {
+                        string linea = sr.ReadLine();
+                        string[] campos = linea.Split(';');
+                        
+                        #region dni
+                        int dni = Convert.ToInt32(campos[0]);
+                        #endregion
+
+                        #region apellido y nombre
+                        string apellidoNombre = campos[1];
+                        #endregion
+
+                        #region foto
+                        string nombreFicheroImagen = campos[2].Trim();
+                        //
+                        string pathFoto = Path.Combine(pathDir, nombreFicheroImagen);
+                        Image foto = Properties.Resources.Persona;
+                        if (File.Exists(pathFoto))
+                        {
+                            foto = Image.FromFile(pathFoto);
+                        }
+                        #endregion
+
+                        #region objeto importado
+                        Persona importado = new Persona { Dni = dni, Nombre = apellidoNombre, Imagen=foto };
+                        #endregion
+
+                        #region lo busca a ver si existe!
+                        int idx = listado.BinarySearch(importado);
+                        #endregion
+
+                        if (idx > -1)
+                        {
+                            //actualiza solo la foto en este caso
+                            listado[idx].Imagen = importado.Imagen;
+                        }
+                        else
+                        {
+                            listado.Add(importado);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    if (fs != null)
+                    {
+                        if (sr != null) sr.Close();
+                        fs.Close();
+                    }
+                }
+            }
+
+            PintarDataGrid();
         }
     }
 }

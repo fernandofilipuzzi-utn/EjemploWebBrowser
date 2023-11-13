@@ -47,6 +47,7 @@
             this.ClientSize = new System.Drawing.Size(894, 589);
             this.Controls.Add(this.webBrowser1);
             this.Name = "FormInformeWeb";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FormInformeWeb";
             this.Load += new System.EventHandler(this.FormInformeWeb_Load);
             this.ResumeLayout(false);

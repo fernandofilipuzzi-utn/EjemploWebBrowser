@@ -48,6 +48,7 @@ namespace EjemploAyuda
             this.ClientSize = new System.Drawing.Size(425, 228);
             this.Controls.Add(this.webBrowser1);
             this.Name = "FormVerAyuda";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FormVerAyuda";
             this.Load += new System.EventHandler(this.FormVerAyuda_Load);
             this.ResumeLayout(false);
