@@ -70,7 +70,7 @@ namespace EjemploAyuda
                 {
                     Persona selected = listado[idx];
 
-                    FormVerInformeWeb fVerRegistro = new FormVerInformeWeb();
+                    FormVerRegistro fVerRegistro = new FormVerRegistro();
 
                     fVerRegistro.tbApellidoNombre.Text = selected.Nombre;
                     fVerRegistro.tbApellidoNombre.Enabled = false;

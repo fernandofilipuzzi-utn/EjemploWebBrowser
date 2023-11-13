@@ -1,7 +1,7 @@
 ﻿
 namespace EjemploAyuda
 {
-    partial class FormVerInformeWeb
+    partial class FormVerRegistro
     {
         /// <summary>
         /// Required designer variable.
@@ -67,7 +67,6 @@ namespace EjemploAyuda
             // btnCerrar
             // 
             this.btnCerrar.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnCerrar.Enabled = false;
             this.btnCerrar.Location = new System.Drawing.Point(211, 245);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrar.Name = "btnCerrar";
