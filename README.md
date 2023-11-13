@@ -15,7 +15,7 @@
             // caso de no incluir los documentos de ayuda en la compilación!
             // string path = Path.Combine(Application.StartupPath,"..","..","ayuda", "index.html");
             //
-            // si se han incluido los documentos de ayuda en la compilación
+            // si se ha incluido los documentos de ayuda en la compilación
             string path = Path.Combine(Application.StartupPath,"ayuda", "index.html");
             //
             webBrowser1.Navigate(path);
