@@ -2,11 +2,15 @@
 
 ## Ejemplo de ayuda web
 
-<p>El ejemplo de prueba es el siguiente:</p>
-<br/><img style="width:300px;" src="Ejemplo_webbrowser/EjemploAyuda/docs/pantallazo1.jpg"/>
+<p>El ejemplo de prueba es el siguiente:</p><br/>
+<div align="center">
+        <img style="width:300px;" src="Ejemplo_webbrowser/EjemploAyuda/docs/pantallazo1.jpg"/>
+</div>
 
-<p>El documento de ayuda web se muestra así:</p>
-<br/><img style="width:300px;" src="Ejemplo_webbrowser/EjemploAyuda/docs/pantallazo2.jpg"/>
+<p>El documento de ayuda web se muestra así:</p><br/>
+<div align="center">
+        <img style="width:300px;" src="Ejemplo_webbrowser/EjemploAyuda/docs/pantallazo2.jpg"/>
+</div>
 
 ```csharp
         //ventana modal
@@ -25,8 +29,9 @@
 
 ## Ejemplos WebBrowser y WebView2
 
-<div style="text-align:center">
-<br/><img style="width:300px;" src="Ejemplo_webbrowser/WebBrowser/docs/pantallazo.jpg"/>
+<div style="text-align:center"><br/>
+<div align="center">
+        <img style="width:300px;" src="Ejemplo_webbrowser/WebBrowser/docs/pantallazo.jpg"/>
 </div>
 
 <p>Para el caso de usar el control WebBrowser:</p>
