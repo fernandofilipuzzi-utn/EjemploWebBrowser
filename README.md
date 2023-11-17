@@ -29,7 +29,7 @@
 </details>
 
 <details>
-<summary># Ejemplos WebBrowser</summary>summary> 
+# <summary>Ejemplos WebBrowser</summary>summary> 
 
 <div style="text-align:center"><br/>
 <div align="center">
@@ -54,7 +54,7 @@
 </details>
         
 <details>
-<summary># Ejemplos WebView2 </summary>summary> 
+# <summary>Ejemplos WebView2 </summary>summary> 
 <p>Para el caso de usar el control WebView2:</p>
 
 ```csharp
