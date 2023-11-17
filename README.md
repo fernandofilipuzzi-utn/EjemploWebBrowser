@@ -5,12 +5,12 @@
 
 <p>El ejemplo de prueba es el siguiente:</p><br/>
 <div align="center">
-        <img style="width:300px;" src="Ejemplo_webbrowser/EjemploAyuda/docs/pantallazo1.jpg"/>
+        <img style="width:300px;" src="Ejemplos_visualizadorWeb/EjemploAyuda/docs/pantallazo1.jpg"/>
 </div>
 
 <p>El documento de ayuda web se muestra así:</p><br/>
 <div align="center">
-        <img style="width:300px;" src="Ejemplo_webbrowser/EjemploAyuda/docs/pantallazo2.jpg"/>
+        <img style="width:300px;" src="Ejemplos_visualizadorWeb/EjemploAyuda/docs/pantallazo2.jpg"/>
 </div>
 
 ```csharp
@@ -33,7 +33,7 @@
 
 <div style="text-align:center"><br/>
 <div align="center">
-        <img style="width:300px;" src="Ejemplo_webbrowser/WebBrowser/docs/pantallazo.jpg"/>
+        <img style="width:200px;" src="Ejemplos_visualizadorWeb/WebBrowser/docs/pantallazo.jpg"/>
 </div>
 
 <p>Para el caso de usar el control WebBrowser:</p>
@@ -56,6 +56,11 @@
 <details>
 <summary>Ejemplos WebView2 </summary>
 <p>Para el caso de usar el control WebView2:</p>
+
+<div style="text-align:center"><br/>
+<div align="center">
+        <img style="width:200px;" src="Ejemplos_visualizadorWeb/WebView/docs/pantallazo.jpg"/>
+</div>
 
 ```csharp
         private void btnVerHTML_Click(object sender, EventArgs e)
