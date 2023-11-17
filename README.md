@@ -1,5 +1,8 @@
 # Ejemplo de uso de controles para la visualización de páginas web
 
+# A first-level heading
+# A second-level heading
+# A third-level heading
 <details>
 <summary> Ejemplo de ayuda web </summary>summary>
 
