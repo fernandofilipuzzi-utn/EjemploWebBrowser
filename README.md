@@ -1,6 +1,7 @@
-# Ejemplo de uso del control WebBrowser
+# Ejemplo de uso de controles para la visualización de páginas web
 
-## Ejemplo de ayuda web
+<details>
+<summary> Ejemplo de ayuda web </summary>summary>
 
 <p>El ejemplo de prueba es el siguiente:</p><br/>
 <div align="center">
@@ -25,9 +26,10 @@
             webBrowser1.Navigate(path);
         }
 ```
+</details>
 
-
-## Ejemplos WebBrowser y WebView2
+<details>
+<summary>  Ejemplos WebBrowser</summary>summary> 
 
 <div style="text-align:center"><br/>
 <div align="center">
@@ -49,7 +51,10 @@
             fInformeWeb.ShowDialog();
         }
 ```
-
+</details>
+        
+<details>
+<summary>  Ejemplos WebView2 </summary>summary> 
 <p>Para el caso de usar el control WebView2:</p>
 
 ```csharp
@@ -65,3 +70,4 @@
             fInformeWeb.ShowDialog();
         }
 ```
+</details>
