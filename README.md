@@ -1,7 +1,7 @@
 # Ejemplo de uso de controles para la visualización de páginas web
 
 <details>
-<summary># Ejemplo de ayuda web </summary>summary>
+# <summary>Ejemplo de ayuda web </summary>summary>
 
 <p>El ejemplo de prueba es el siguiente:</p><br/>
 <div align="center">
