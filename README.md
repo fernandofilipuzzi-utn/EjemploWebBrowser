@@ -1,10 +1,7 @@
 # Ejemplo de uso de controles para la visualización de páginas web
 
-# A first-level heading
-# A second-level heading
-# A third-level heading
 <details>
-<summary> Ejemplo de ayuda web </summary>summary>
+<summary># Ejemplo de ayuda web </summary>summary>
 
 <p>El ejemplo de prueba es el siguiente:</p><br/>
 <div align="center">
@@ -32,7 +29,7 @@
 </details>
 
 <details>
-<summary>  Ejemplos WebBrowser</summary>summary> 
+<summary># Ejemplos WebBrowser</summary>summary> 
 
 <div style="text-align:center"><br/>
 <div align="center">
@@ -57,7 +54,7 @@
 </details>
         
 <details>
-<summary>  Ejemplos WebView2 </summary>summary> 
+<summary># Ejemplos WebView2 </summary>summary> 
 <p>Para el caso de usar el control WebView2:</p>
 
 ```csharp
