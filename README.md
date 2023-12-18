@@ -53,7 +53,7 @@
 ```
 </details>
         
-<details>
+<details open>
 <summary>Ejemplos WebView2 </summary>
 <p>Para el caso de usar el control WebView2:</p>
 
